@@ -24,7 +24,7 @@
 
     # Bootloader
     boot = {
-        kernelPackages = pkgs.linuxPackages_latest;
+        kernelPackages = pkgs.linuxKernel.packages.linux_zen;
 
         loader = {
             systemd-boot.enable = true; # Pick this xor with GRUB.
@@ -89,7 +89,17 @@
 
         libinput.enable = true;
     };
-
+    environment.plasma6.excludePackages = with pkgs.kdePackages; [
+        oxygen
+        dolphin
+        kate
+        elisa
+        gwenview
+        khelpcenter
+        konsole
+        plasma-browser-integration
+        print-manager
+    ];
     services.xserver.displayManager.sessionCommands = ''
         xset -dpms
         xset s blank

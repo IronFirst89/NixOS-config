@@ -11,7 +11,6 @@
         git
         sysstat
         lm_sensors
-        scrot
         fastfetch
         nnn
         foot
@@ -23,14 +22,16 @@
         nginxMainline
         szurubooru.server
         szurubooru.client
-
-        nodejs_25
-        dotnetCorePackages.dotnet_10.sdk
-        rocmPackages.llvm.clang-unwrapped
-        python314
-        ghc
-        haskellPackages.cabal-install
-        alire
+        lxqt.pcmanfm-qt
+        scrot
+        
+#        nodejs_25
+ #       dotnetCorePackages.dotnet_10.sdk
+  #      rocmPackages.llvm.clang-unwrapped
+   #     python314
+         ghc
+     #   haskellPackages.cabal-install
+      #  alire
 
         steam
     ];
